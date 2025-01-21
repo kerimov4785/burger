@@ -1,0 +1,355 @@
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    height: 700px;
+    background-color: #ffbf45;
+    /* overflow: hidden; */
+}
+.logo-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 40px;
+}
+.logo img{
+    width: 250px;
+}
+.nomer img{
+    width: 40px;
+    filter:brightness(15%);
+}
+.nomer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 99;
+}
+.nomer a {
+    font: 700 17px "Montserrat";
+    color: #3d2514;
+}
+nav{
+    display: flex;
+    gap: 50px;
+    justify-content:end; 
+}
+nav a{
+    text-decoration: none;
+    color: #3d2514;
+    text-transform:uppercase;
+    letter-spacing: 4px;
+    font: 500 21px "Bebas Neue";
+    z-index: 99;
+}
+.header-2{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.text{
+    display: flex;
+    flex-direction:column ;
+}
+.text p{
+    align-self: start;
+    font: 400 24px "Bebas Neue";
+    color: #3d2514;
+    text-transform:uppercase;
+    padding: 10px 20px;
+    border: 2px dashed #3d2514;
+    display: inline;
+}
+.text h1,.text h2{
+    text-transform: uppercase;
+    font: 400 114px "Alfa Slab One";
+    color: #3d2514;
+    filter: drop-shadow(3.936px 4.528px 0px #fee8bc);
+}
+.text h1{
+    line-height: 114px;
+    margin-top: 15px;
+}
+.header-photo{
+    position: relative;
+    width: 50%;
+    height: 460px;
+}
+#burger-header{
+    position: absolute;
+    width: 340px;
+    bottom: 0px;
+    right: 60px;
+    z-index: 3;
+}
+#drink-header{
+    position: absolute;
+    width: 145px;
+    right: 0px;
+    bottom: 15px;
+    z-index: 2;
+}
+#glow{
+    position: absolute;
+    width: 600px;
+    right: -42px;
+    bottom: 20px;
+    z-index:1;
+}
+#fries-header{
+    position: absolute;
+    width: 200px;
+    right: 280px;
+    bottom: 60px;
+    transform: rotate(-30deg);
+    z-index: 2;
+}
+#Shadow-burger{
+    position: absolute;
+    right: 30px;
+    bottom: -35px;
+    width: 400px;
+}
+#Shadow-drink{
+    position: absolute;
+    right: -70px;
+    bottom: -12px;
+}
+.price{
+    position: absolute;
+    bottom: -50px;
+    right: 350px;
+    z-index: 3;
+    width: 160px;
+    height: 160px;
+    background-color: #df1b1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.price .box-price{
+    font: 500 64px 'Bebas Neue';
+    text-align: center;
+    line-height: 54px;
+    color: white;
+    border: 2px dashed white;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.price h3 span{
+    font: 500 32px 'Bebas Neue';
+}
+.only{
+    letter-spacing: 10px;
+    font-size: 32px;
+    line-height: 32px;
+    padding-left: 11px;
+}
+/* poster */
+.all-poster{
+    display: grid;
+    padding: 70px 0;
+    column-gap: 30px;
+    row-gap: 20px;
+    grid-template-columns: 50%;
+}
+.all-poster div{
+    padding: 20px;
+}
+.poster1{
+    background: url(bg-burger1.png) no-repeat;
+    grid-row: 1/3;
+    grid-column: 1/2;
+    border-radius: 5px;
+    height: 419px
+}
+.poster2{
+    background: url(bg-burger2.png) no-repeat center/cover ;
+    grid-row: 1/2;
+    border-radius: 5px;
+}
+.poster3{
+    background: url(bg-burger3.png) no-repeat center/cover ;
+    grid-row: 2/3;
+    border-radius: 5px;
+}
+.all-poster h5{
+    font: 500 25px 'Bebas Neue';
+    color: white;
+}
+.all-poster h4{
+    font: 500 42px 'Bebas Neue';
+    color: white;
+    line-height: 42px;
+}
+.all-poster .poster2 h4{
+    width: 200px;
+}
+.choose{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.choose a{
+    display: inline-block;
+    font: 500 25px "Bebas Neue";
+    text-transform: uppercase;
+    color: #3d2514;
+    padding: 5px 20px;
+    background-color: #ffc035;
+}  
+.choose h2{
+    font: 500 50px "Alfa Slab One";
+    color: #3d2514;
+    text-transform: uppercase;
+    margin: 20px 0 5px;
+}
+.choose p{
+    font: 500 17px "Montserrat";
+    color:#3d2514;
+    line-height: 29px;
+    width: 1200px;
+    text-align: center;
+}
+.burgers{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+    margin-top: 50px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box{
+    width: 350px;
+}
+.box img{
+    width: 100%;
+}
+.box1{
+    align-self: end;
+}
+.box3{
+    align-self: end;
+}
+.box h3{
+    font: 500 38px "Bebas Neue";
+    color: #3d2514;
+    margin-top: 15px;
+}
+.box p{
+    font: 400 17px "Montserrat";
+    width: 350px;
+    margin: 10px 0 30px;
+}
+.box a{
+    font: 400 17px "Alfa Slab One";
+    background-color: #df1b1c;
+    padding: 15px 30px;
+    color: white;
+}
+/* discover */
+.discover{
+    display: flex;
+    padding:50px 30px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+.discover-text h4{
+    font: 500 29px "Bebas Neue";
+    color:#3d3d3d;
+    letter-spacing: 2px;
+}
+.discover-text h3{
+    font: 500 42px "Alfa Slab One";
+    color: #3d2514;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+.discover-text p{
+    font: 500 21px "Montserrat";
+    color: #3d3d3d;
+    line-height: 40px;
+    margin-top: 20px;
+}
+.discover img{
+    width: 50%;
+}
+/* resevation */
+.reservation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:150px 0;
+    overflow: hidden;
+}
+.reservation img{
+    position: absolute;
+}
+.bottle-res{
+    width: 110px;
+}
+.burger-res{
+    width: 200px;
+}
+.food-res{
+    width: 350px;
+    right: -100px;
+    bottom: 5px;
+    transform: rotate(75deg);
+}
+.reservation h4{
+    font: 500 29px "Bebas Neue";
+    color: #3d2514;
+    letter-spacing: 2px;
+}
+.reservation h2{
+    font: 400 50px "Alfa Slab One";
+    color: #3d2514;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.reservation form{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+.reservation form input{
+    border-radius: 4px;
+    border: 1px solid #b9b9b9;
+    width: 290px;
+    padding: 20px 0 15px 10px;
+    outline: none;
+}
+.reservation form input::placeholder{
+    font: 300 21px "Bebas Neue";
+    text-transform: uppercase;
+    color: #3d3d3d;
+}
+.reservation form a {
+    font: 400 21px "Alfa Slab One";
+    color: white;
+    text-transform: uppercase;
+    background-color:#df1b1c;
+    align-content: center;
+    width: 290px;
+    border-radius: 4px;
+    text-align: center;
+}
